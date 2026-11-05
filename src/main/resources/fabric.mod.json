@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "endersky",
+  "version": "${version}",
+  "name": "Ender Sky",
+  "description": "Prevents other mods from changing the sun and moon position, keeping their movement exactly like vanilla.",
+  "authors": [
+    "EnderDevelopment"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "com.enderdevelopment.endersky.EnderSky"
+    ]
+  },
+  "mixins": [
+    "endersky.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  }
+}
